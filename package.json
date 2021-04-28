@@ -1,0 +1,19 @@
+{
+  "name": "water_company_api",
+  "version": "1.0.0",
+  "description": "Web dev class project: Building an API for a water company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mamane19/waterco_api.git"
+  },
+  "author": "Group12 (Brenda && Mamane19)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mamane19/waterco_api/issues"
+  },
+  "homepage": "https://github.com/mamane19/waterco_api#readme"
+}

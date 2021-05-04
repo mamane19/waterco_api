@@ -12,7 +12,7 @@ export async function addUser(req, res) {
             let userObj = {
                 email_address: req.body.email_address,
                 password: hash,
-                full_name: req.body.full_name
+                user_name: req.body.user_name
             }
             let user = await User.create(userObj);
             if (user) {
@@ -113,7 +113,7 @@ export async function signIn(req, res) {
             return res.status(200).json({
                 status: true,
                 message: "User authentication successful",
-                user: { full_name: user.full_name, email_address: user.email_address, user_id: user.user_id },
+                user: { user_name: user.user_name, email_address: user.email_address, user_id: user.user_id },
                 token: authToken,
                 expiresIn: 3600
             })

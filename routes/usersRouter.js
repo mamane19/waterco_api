@@ -1,5 +1,5 @@
 import express from "express";
-import { addUser, viewAllUsers, viewUser, signIn } from '../controllers/usersController.js'
+import { addUser, viewAllUsers, viewUser, signIn, deleteUser } from '../controllers/usersController.js'
 import { authenticate } from '../middlewares/auth.js';
 
 const usersRouter = express.Router();
@@ -15,6 +15,9 @@ usersRouter.get("/:id", authenticate, viewUser);
 
 //View all Users users/ - Authenticate.
 usersRouter.get("/", authenticate, viewAllUsers);
+
+//Deleter a user
+usersRouter.delete("/:id", authenticate, deleteUser);
 
 
 export default usersRouter;

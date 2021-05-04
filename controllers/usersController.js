@@ -127,3 +127,29 @@ export async function signIn(req, res) {
         })
     }
 }
+
+//Delete a user
+export async function deleteUser(req, res) {
+    try {
+      let deleteuser = await Member.destroy({
+        where: { user_id: req.params.id },
+      });
+      if (deleteuser) {
+        res.json({
+          success: true,
+          message: "User deleted successfully",
+        });
+      } else {
+        res.json({
+          success: true,
+          message: "Sorry User not found",
+        });
+      }
+    } catch (e) {
+      console.log(e);
+      res.status(500).json({
+        success: false,
+        message: "Oops!! Something's wrong",
+      });
+    }
+  }

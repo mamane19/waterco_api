@@ -7,7 +7,7 @@ export async function captureReading(req, res) {
     if (capturereading) {
       res.status(200).json({
         success: true,
-        message: `Payment captured successfully`,
+        message: `Reading Captured successfully`,
         data: capturereading,
       });
     } else {

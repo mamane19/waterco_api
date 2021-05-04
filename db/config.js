@@ -3,10 +3,10 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const dbConfig = {
-  HOST: process.env.DB_HOST,
-  USER: process.env.DB_USER,
-  PASSWORD: process.env.DB_PASS,
-  DB: process.env.DB_NAME,
+  HOST: "us-cdbr-east-03.cleardb.com",
+  USER: "b767149b000880",
+  PASSWORD: "54291a32",
+  DB: "heroku_d2c25d529835f4a",
   dialect: "mysql",
   pool: {
     max: 5,

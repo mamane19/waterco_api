@@ -5,9 +5,9 @@ const User = sequelize.define(
   "users",
   {
     user_id: {
-      autoincrement: true,
+      autoIncrement: true,
       type: Sequelize.INTEGER,
-      allowNull: true,
+      allowNull: false,
       primaryKey: true,
     },
     user_name: {

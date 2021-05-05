@@ -5,9 +5,9 @@ const Bill = sequelize.define(
   "bill",
   {
     bill_id: {
-      autoincrement: true,
+      autoIncrement: true,
       type: Sequelize.INTEGER,
-      allowNull: true,
+      allowNull: false,
       primaryKey: true,
     },
     premise_id: {

@@ -5,9 +5,9 @@ const Member = sequelize.define(
   "members",
   {
     member_id: {
-      autoincrement: true,
+      autoIncrement: true,
       type: Sequelize.INTEGER,
-      allowNull: true,
+      allowNull: false,
       primaryKey: true,
     },
     member_name: {

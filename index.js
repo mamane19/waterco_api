@@ -10,7 +10,7 @@ dotenv.config();
 
 const port = process.env.PORT || 3001;
 
-app.get("/", (req, res) => {
+app.get("/", cors(), (req, res) => {
   res.send("Welcome to our water company dashboard API");
 });
 app.use(
